@@ -10,27 +10,24 @@ database design on the topic: Importer of food products
     - Role System (Admin, Manager, Client, Supplier)
     - Logging
 
-1. The database should be capable of supporting the following maintenance
-   transactions: 
-	- Create and maintain records recording the details of countries, suppliers, clients. (Admin) 
-	- Create and maintain product categories and subcategories. (Admin, Manager) 
-	- Create new product categories. (Admin, Manager, Supplier) 
-	- Create and maintain records recording the details of products. (Admin, Manager, Supplier) 
-	- Create and maintain records recording
-   the details of warehouses and product locations.
-   (Admin, Manager) 
-	- Create and maintain records recording
-   the details of client addresses and product requirements.
-   (Admin, Manager, Client)
+1. The application must allow user to: 
 
-1. The database should be capable of supporting the following example query transactions:
-	- List suppliers with name, email and country.
-	- List products for category or subcategory.
-	- List product requierments for each client address.
-	- List awailable products per warehouse.
-	- List countries, categories and subcategories.
-	- List users.
-	- List all addresses for client.
+	- Register and authenticate
+	- Create and edit:
+		- product categories and subcategories. (Admin, Manager)
+	- Create product categories. (Admin, Manager, Supplier)
+	- Describe:
+		- available types of products from each supplier. (Admin, Manager, Supplier)
+		- details of warehouses and their contents. (Admin, Manager)
+		- product requirements for each of client addresses. (Admin, Manager, Client)
+	- View the following data:
+		- List of suppliers with name, email and country.
+		- List of products for category or subcategory.
+		- List of product requierments for each client address.
+		- List of awailable products per warehouse.
+		- List of countries, categories and subcategories.
+		- List of users.
+		- List of all addresses for client.
 
 ## Entitity relationship diagram
 
